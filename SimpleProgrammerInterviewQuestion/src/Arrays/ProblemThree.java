@@ -22,6 +22,5 @@ public class ProblemThree {
 		}
 		System.out.println("This is the lowest integer: "+j);
 		System.out.println("This is the highest integet: " + k);
-	
 	}
 }
