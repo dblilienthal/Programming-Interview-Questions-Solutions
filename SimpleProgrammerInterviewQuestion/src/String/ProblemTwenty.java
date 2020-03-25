@@ -10,7 +10,7 @@ public class ProblemTwenty {
 		
 		char[] ArrayA = a.toCharArray();
 		char[] ArrayB = b.toCharArray();
-		int n;
+		int n; // This is the arrays length
 		
 		//Check to see if the lengths are different
 		if (ArrayA.length != ArrayB.length) {return false;}
@@ -40,9 +40,9 @@ public class ProblemTwenty {
 	
 	//Remove a character from the array by creating a new array without that index
 	public static char[] remove(char[] array, int index) {
-		char[] temp = new char[array.length - 1];
+		char[] temp = new char[array.length - 1]; //Create a new char array with one less in length
 		for (int i = 0, k = 0; i < array.length; i++) {
-			if (i == index) {
+			if (i == index) { // If the index is i, then don't add it
 				continue;
 			}
 			temp[k++] = array[i];

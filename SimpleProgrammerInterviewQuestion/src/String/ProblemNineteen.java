@@ -6,7 +6,9 @@ package String;
 
 public class ProblemNineteen {
 	public static void main(String[] args) {
-		String s = "Hello World!";
+		
+		String s = "Hello World!"; 
+		
 		char[] array = s.toCharArray();
 		int n = array.length;
 		
