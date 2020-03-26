@@ -10,20 +10,24 @@ public class ProblemEleven {
 
 	public static void main(String[] args) {
 		LinkedList<Integer> list = new LinkedList<>();
-		list.add(1);list.add(2);list.add(3);list.add(4);list.add(5);list.add(6);list.add(7);
+		list.add(1);list.add(25);list.add(33);list.add(400);list.add(534);list.add(664);list.add(7);
 		
-		int sPointer = 0;
-		int i = 0;
+		// Create an increment, result, and middle pointer instance variable
+		int i = 0, result = 0, mPointer = 0;
 		try {
+			// Iterate though the LinkedList until the end
 			while(list.get(i) != null) {
-				System.out.println(list.get(i));
-				i++;
 				if (i%2 == 1) {
-					sPointer++;
+					// If the incrementer is odd, increment the middle pointer and 
+					// store the set the new result. 
+					mPointer++;
+					result = list.get(mPointer);
 				}
+				i++;
 			}
 		} catch (IndexOutOfBoundsException e) {
-			System.out.println("This is the middle number: " + sPointer);
+			// When the list reaches the end, return the middle number.
+			System.out.println("This is the middle number: " + result);
 		}
 	}
 }

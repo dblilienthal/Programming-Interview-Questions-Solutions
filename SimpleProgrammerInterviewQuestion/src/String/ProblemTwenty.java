@@ -1,25 +1,16 @@
 package String;
-
 /*
  * How do you check if two strings are anagrams of each other?
  */
-
 public class ProblemTwenty {
-
 	public static boolean isAnagrams(String a, String b) {
 		
 		char[] ArrayA = a.toCharArray();
 		char[] ArrayB = b.toCharArray();
-		int n; // This is the arrays length
+		int n = ArrayA.length; // This is the arrays length
 		
 		//Check to see if the lengths are different
 		if (ArrayA.length != ArrayB.length) {return false;}
-		
-		if (ArrayA.length >= ArrayB.length) {
-			n = ArrayA.length;
-		} else {
-			n = ArrayB.length;
-		}
 		
 		for (int m = 0; m < n; m++){
 			for (int i = 0; i < ArrayA.length; i++) {
@@ -40,11 +31,10 @@ public class ProblemTwenty {
 	
 	//Remove a character from the array by creating a new array without that index
 	public static char[] remove(char[] array, int index) {
-		char[] temp = new char[array.length - 1]; //Create a new char array with one less in length
+		//Create a new char array with one less in length
+		char[] temp = new char[array.length - 1]; 
 		for (int i = 0, k = 0; i < array.length; i++) {
-			if (i == index) { // If the index is i, then don't add it
-				continue;
-			}
+			if (i == index) { continue; } // If the index is i, then don't add it 
 			temp[k++] = array[i];
 		}
 		return temp;
@@ -57,5 +47,4 @@ public class ProblemTwenty {
 		System.out.println(isAnagrams("Yes", "No")); //False
 		System.out.println(isAnagrams("Meow", "Cats")); //False
 	}
-
 }
