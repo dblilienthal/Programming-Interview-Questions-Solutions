@@ -1,0 +1,7 @@
+# Programming-Interview-Questions-Solutions
+These are my solutions to the 
+https://simpleprogrammer.com/programming-interview-questions/
+
+The purpose of doing these problems is to test my knowledge, 
+constantly keep up with coding with java, and to discover new
+techniques to answering these simple data structure problems.
