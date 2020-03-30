@@ -1,6 +1,5 @@
 package Arrays;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
 /*
@@ -33,5 +32,4 @@ public class ProblemFive {
 		int[] test3 = {1,1,1,1,1,1,1,2,2,2,2,2};  
 		System.out.println(findDuplicate(test3)); // 1,2
 	}
-
 }
